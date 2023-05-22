@@ -1,0 +1,22 @@
+
+
+<div class="container">
+  <h1>Stupid Coaching</h1>
+
+  <div class="border-start border-5 shadow-sm p-3 mb-5 bg-body rounded">
+    <p class="fw-bold"><%= params[:question] %></p>
+    <p class="fst-italic">-You</p>
+  </div>
+
+  <div class="border-start border-5 shadow-sm p-3 mb-5 bg-success bg-opacity-10 rounded">
+    <p class="fw-bold"><%= @answer %></p>
+    <p class="fst-italic">-Coach</p>
+  </div>
+
+  <div class="text-decoration-none">
+    <%= link_to "Ask a new question",
+    ask_path,
+    class: "text-decoration-none" %>
+  </div>
+
+</div>
